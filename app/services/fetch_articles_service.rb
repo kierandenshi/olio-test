@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 require 'net/http'
 
 class FetchArticlesService
-  BASE_URL = 'https://s3-eu-west-1.amazonaws.com/olio-staging-images/developer/test-articles-v4.json'.freeze
-
-  def initialize; end
+  BASE_URL = 'https://s3-eu-west-1.amazonaws.com/olio-staging-images/developer/test-articles-v4.json'
 
   def call
     url
