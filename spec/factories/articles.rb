@@ -2,7 +2,8 @@
 
 FactoryBot.define do
   factory :article do
-    external_id { 123 }
+    sequence(:external_id) { |n| n }
+
     title { 'Some title' }
     description { 'Some description' }
     section { 'food' }
