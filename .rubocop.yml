@@ -5,4 +5,8 @@ require:
 AllCops:
   NewCops:
     enable
-    
+  Exclude:
+    - 'app/views/**/*'
+
+Style/Documentation:
+  Enabled: false
