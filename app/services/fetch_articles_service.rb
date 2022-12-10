@@ -10,11 +10,16 @@ class FetchArticlesService
       .then { |url_string| URI(url_string) }
       .then { |uri| Net::HTTP.get_response(uri).body || '{}' }
       .then { |json| JSON.parse(json) }
+      .then { |json| collection(json) }
   end
 
   private
 
   def url
     BASE_URL
+  end
+
+  def collection(json)
+    json.map { |element| Article.new(element) }
   end
 end

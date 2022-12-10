@@ -1,1 +1,11 @@
-<p>hello</p>
+<h1>Articles</h1>
+
+<section>
+  <h2>Food items</h2>
+  <%= render partial: 'article', collection: @food_articles %>
+</section>
+
+<section>
+  <h2>Non-food items</h2>
+  <%= render partial: 'article', collection: @non_food_articles %>
+</section>
