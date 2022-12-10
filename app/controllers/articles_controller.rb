@@ -6,4 +6,9 @@ class ArticlesController < ApplicationController
     @food_articles = @articles.filter { |article| article.section == 'food' }
     @non_food_articles = @articles.filter { |article| article.section != 'food' }
   end
+
+  def like
+    Article.find(params[:id]).like!
+    redirect_to action: 'index'
+  end
 end

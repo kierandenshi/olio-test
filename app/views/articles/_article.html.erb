@@ -1,7 +1,16 @@
 <article>
   <div>
-    <img src="<%= article.image %>" />
+    <img src="<%= article.image_url %>" />
     <strong><%= article.title %></strong>
   </div>
-  <%= article.description %>
+
+  <div>
+    <%= article.description %>
+  </div>
+
+  <div>
+    Likes: <%= article.likes %>
+    <br>
+    <%= link_to "Like", article_path(article) %>
+  </div>
 </article>

@@ -7,6 +7,22 @@ AllCops:
     enable
   Exclude:
     - 'app/views/**/*'
+    - 'db/**/*'
 
 Style/Documentation:
+  Enabled: false
+
+Layout/FirstArgumentIndentation:
+  Enabled: false
+
+Layout/ArgumentAlignment:
+  Enabled: false
+
+Layout/FirstHashElementIndentation:
+  Enabled: false
+
+Layout/FirstArrayElementIndentation:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
   Enabled: false
