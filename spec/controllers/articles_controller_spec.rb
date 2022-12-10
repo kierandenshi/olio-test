@@ -7,7 +7,5 @@ describe ArticlesController do
     before { get :index }
 
     it { is_expected.to respond_with :ok }
-    # it { is_expected.to render_with_layout :application }
-    # it { is_expected.to render_template :index }
   end
 end

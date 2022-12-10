@@ -7,6 +7,6 @@ FactoryBot.define do
     description { 'Some description' }
     section { 'food' }
     image_url { 'https://some_image.jpg' }
-    likes { 1 }
+    likes { 0 }
   end
 end
