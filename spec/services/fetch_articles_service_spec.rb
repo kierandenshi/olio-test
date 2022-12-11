@@ -15,7 +15,7 @@ describe FetchArticlesService do
       allow(service).to receive(:persist)
     end
 
-    it 'does a thing' do
+    it 'calls the #persist method' do
       service.call
       expect(service).to have_received(:persist).with(JSON.parse(json))
     end
@@ -38,7 +38,6 @@ describe FetchArticlesService do
 
       it 'does not persist exsisting articles' do
         create(:article, external_id: 3_899_631)
-
         service.persist(JSON.parse(json))
         expect(Article.count).to eq 25
       end

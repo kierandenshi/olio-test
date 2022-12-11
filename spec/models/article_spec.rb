@@ -10,7 +10,7 @@ describe Article do
     it { is_expected.to validate_uniqueness_of :external_id }
   end
 
-  context 'with like! method' do
+  context 'with #like! method' do
     let(:article) { build(:article) }
 
     it 'starts with zero likes' do
