@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails application produced as a possible solution to the coding task described [here]('https://tech.olioex.com/rails-coding-task.html')
 
-Things you may want to cover:
+To get this app running locally, please ensure your system has the proper prerequisites installed. These are:
 
-* Ruby version
+- Ruby version 3.1.2
+- SQLite3
 
-* System dependencies
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Improvements
 
-* ...
+- Extract "like" functions into own Model with polymorphic associations so the function can be shared across concerns. Tidier routing for the "likes" resources.
+- More controller tests
+- Automated browser tests
