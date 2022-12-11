@@ -8,6 +8,7 @@ AllCops:
   Exclude:
     - 'app/views/**/*'
     - 'db/**/*'
+    - 'bin/**/*'
 
 Style/Documentation:
   Enabled: false
