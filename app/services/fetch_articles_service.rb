@@ -9,10 +9,10 @@ class FetchArticlesService
     URI(BASE_URL)
       .then { |uri| Net::HTTP.get_response(uri).body || '{}' }
       .then { |json| JSON.parse(json) }
-      .then { |json| persist!(json) }
+      .then { |json| persist(json) }
   end
 
-  def persist!(json)
+  def persist(json)
     json.each do |element|
       e = element.with_indifferent_access
       Article.find_or_create_by({
