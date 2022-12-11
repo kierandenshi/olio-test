@@ -2,7 +2,7 @@
 
 class ArticlesController < ApplicationController
   def index
-    @articles = FetchArticlesService.new.call
+    @articles = Article.all
     @food_articles = @articles.filter { |article| article.section == 'food' }
     @non_food_articles = @articles.filter { |article| article.section != 'food' }
   end

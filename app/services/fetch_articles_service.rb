@@ -10,7 +10,6 @@ class FetchArticlesService
       .then { |uri| Net::HTTP.get_response(uri).body || '{}' }
       .then { |json| JSON.parse(json) }
       .then { |json| persist!(json) }
-    Article.all
   end
 
   def persist!(json)
