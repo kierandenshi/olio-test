@@ -1,6 +1,6 @@
 # README
 
-This is a Ruby on Rails application produced as a possible solution to the coding task described [here]('https://tech.olioex.com/rails-coding-task.html')
+This is a [Ruby on Rails](https://guides.rubyonrails.org/index.html) application produced as a possible solution to the coding task described [here]('https://tech.olioex.com/rails-coding-task.html').
 
 Please ensure your system has the proper prerequisites installed. These are:
 
@@ -20,6 +20,7 @@ $ bundle install
 ```
 3. Prepare the database
 ```bash
+$ bundle exec rails db:create
 $ bundle exec rails db:migrate
 ```
 4. Start the application
