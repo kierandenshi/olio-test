@@ -7,7 +7,7 @@ describe HomeController do
     let(:service_mock) { instance_double(FetchArticlesService) }
 
     before do
-      allow(FetchArticlesService).to receive(:new).and_return(service_mock)
+      allow(FetchArticlesService).to receive(:new) { service_mock }
       allow(service_mock).to receive(:call)
       get :index
     end
